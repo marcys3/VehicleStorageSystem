@@ -1,0 +1,15 @@
+Vehicle M1025_armed_M2HB1 : "{3EA6F47D95867114}Prefabs/Vehicles/Wheeled/M998/M1025_armed_M2HB.et" {
+ components {
+  FLF_CreateActionsComponent "{652CED63E92CE7EC}" {
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    EntitySlotInfo FLF_VSS_Slot1 {
+    }
+    EntitySlotInfo FLF_VSS_Slot2 {
+    }
+   }
+  }
+ }
+ coords 128.097 1 130.327
+}

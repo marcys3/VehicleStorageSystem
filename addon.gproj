@@ -1,0 +1,8 @@
+GameProject {
+ ID "VehicleStorageSystem"
+ GUID "652CBAEBEC4D9FC1"
+ TITLE "VehicleStorageSystem"
+ Dependencies {
+  "58D0FB3206B6F859"
+ }
+}
