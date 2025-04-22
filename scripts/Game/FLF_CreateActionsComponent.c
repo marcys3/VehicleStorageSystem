@@ -6,13 +6,6 @@ class FLF_CreateActionsComponentClass : ScriptComponentClass
 class FLF_CreateActionsComponent : ScriptComponent
 {
 	
-override void EOnInit(IEntity owner)
-{
-	//super.EOnInit(owner);
-	//DebugPrintVSSSlots();
-	Print("TEEEEEEEEEEEEEEEEEEEEEEEEEEEEESTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT");
-		Print("DUPADUPADUPAUDUDUAPDAUDAUDPADUADUADOPADUPADUPADU: ", LogLevel.WARNING);
-}
 	
 	protected override void OnPostInit(IEntity owner)
 	{
