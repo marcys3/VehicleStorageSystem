@@ -50,7 +50,6 @@ class FLF_CreateActionsComponent : ScriptComponent
 				result.Insert(info);
 			}
 		}
-	Print("Entity attached to slot: " + result, LogLevel.WARNING);
 	return result;
 		
 	}
@@ -76,6 +75,46 @@ void DebugPrintVSSSlots()
 		Print("Slot: " + info.GetSourceName());
 	}
 }
+	
+void AddDynamicSlotActions(array <EntitySlotInfo> m_slotManager)
+	{
+		EntitySlotInfo SelectedSlot;
+		IEntity SlotManagerOwner = GetOwner();
+		
+		ActionsManagerComponent ActionsManagerComponentHandle = ActionsManagerComponent.Cast(GetOwner().FindComponent(ActionsManagerComponent));
+		if (!ActionsManagerComponentHandle)
+		{
+			Print("No ActionsManagerComponent found on the entity");
+			return;
+		}
+		
+		SlotManagerComponent slotManager = GetSlotManagerComponent();
+		if (!slotManager)
+		{
+			return;
+		}
+		
+		array<EntitySlotInfo> slotInfos = {};
+		slotManager.GetSlotInfos(slotInfos);
+
+		foreach (EntitySlotInfo info : slotInfos)
+		{
+			string slotName = info.GetSourceName();
+
+			if (!slotName.StartsWith("FLF_VSS_"))
+				continue;
+			
+			if (slotName.StartsWith("FLF_VSS_"))
+				SelectedSlot = info;
+
+			//FLF_VSS_MountAction action = new FLF_VSS_MountAction();
+			//action.Init(SlotManagerOwner, SelectedSlot);
+
+			//ActionsManagerComponentHandle.InsertAction(action);
+			//Print("Dodano akcję montażu dla slota: " + slotName);
+		}
+		
+	}
 	
 
 	

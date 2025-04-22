@@ -5,8 +5,12 @@ Vehicle M1025_armed_M2HB1 : "{3EA6F47D95867114}Prefabs/Vehicles/Wheeled/M998/M10
   SlotManagerComponent "{55BCE45E438E4CFF}" {
    Slots {
     EntitySlotInfo FLF_VSS_Slot1 {
+     PivotID "v_body"
+     Offset -1.1 0.5 -1.6
     }
     EntitySlotInfo FLF_VSS_Slot2 {
+     PivotID "v_door_L02"
+     Offset 0 0 -0.4
     }
    }
   }
