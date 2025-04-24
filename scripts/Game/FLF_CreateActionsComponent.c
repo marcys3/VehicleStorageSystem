@@ -115,7 +115,5 @@ void AddDynamicSlotActions(array <EntitySlotInfo> m_slotManager)
 		}
 		
 	}
-	
 
-	
 }

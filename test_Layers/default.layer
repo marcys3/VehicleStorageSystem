@@ -14,6 +14,56 @@ Vehicle M1025_armed_M2HB1 : "{3EA6F47D95867114}Prefabs/Vehicles/Wheeled/M998/M10
     }
    }
   }
+  ActionsManagerComponent "{C97BE5489221AE18}" {
+   ActionContexts {
+    UserActionContext "{6530B6101799CFB5}" {
+     UIInfo UIInfo "{6530B6101C3693B9}" {
+      Name "Mount"
+      Description "Mount thingy"
+     }
+     ContextName "FLF_VSS_Action1"
+     Position PointInfo "{6530B611E88EBAAB}" {
+      PivotID "v_body"
+      Offset -1.1 0.5 -1.6
+     }
+    }
+    UserActionContext "{6530B611900D998D}" {
+     UIInfo UIInfo "{6530B61193B23E0E}" {
+      Name "Mount"
+      Description "Mount"
+     }
+     ContextName "FLF_VSS_Action2"
+     Position PointInfo "{6530B6119B7FB364}" {
+      PivotID "v_door_L02"
+      Offset 0 0 -0.4
+     }
+    }
+   }
+   additionalActions {
+    FLF_VSS_MountAction "{6530B611578BAA35}" {
+     ParentContextList {
+      "FLF_VSS_Action1"
+     }
+     UIInfo UIInfo "{6530B6115FD1F313}" {
+      Name "Mount1"
+      Description "Mount Thingy"
+     }
+     ActionTitle "FLF_VSS_Action1"
+     VisibilityRange 2
+    }
+    FLF_VSS_MountAction "{6530B611154DBC93}" {
+     ParentContextList {
+      "FLF_VSS_Action2"
+     }
+     UIInfo UIInfo "{6530B611108BC291}" {
+      Name "Mount2"
+      Description "Mount Thingy"
+     }
+     ActionTitle "FLF_VSS_Action2"
+     VisibilityRange 2
+    }
+   }
+  }
  }
  coords 128.097 1 130.327
 }
